@@ -1,0 +1,398 @@
+* {
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),
+        url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
+        url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
+        url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (max-width:576px) {
+    
+
+    .video {
+        margin-top: 200px;
+    }
+
+    .direction {
+        text-align: center;
+    }
+
+    .style-form {
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .columns-style {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #text-headset {
+        top: 13px !important;
+        left: 0px !important;
+
+    }
+
+    .detail {
+        left: -15px !important;
+        top: -76px;
+    }
+
+
+    .person {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    #white-text {
+        padding: 0% !important;
+        margin-top: 24% !important;
+
+    }
+
+    #grey-text {
+        padding: 4% !important;
+    }
+
+    .btn-howitwork {
+        margin-top: -36px;
+    }
+
+    .nav-link:hover {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+
+    .text {
+        font-size: 25px !important;
+        margin-top: -43px;
+    }
+
+    .login {
+        display: flex !important;
+        margin-left: 1px !important;
+        flex-direction: column !important;
+        background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .try-vr {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .img-tryvr {
+        display: none;
+    }
+
+    .footer {
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+}
+
+
+
+ul li.active {
+    border-bottom: 1px #fff dashed;
+    border-radius: 100px;
+    box-shadow: #fff;
+    transition: 0.3s;
+
+
+}
+
+nav .container ul li.active a {
+    color: #fff;
+}
+
+body {
+    background-color: #031027;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    font-family: "Inconsolata", Arial, sans-serif !important;
+}
+
+html {
+    overflow-x: hidden !important;
+}
+
+.login {
+    display: flex;
+    margin-left: 55px;
+}
+
+#grey-text {
+    color: grey;
+}
+
+#white-text {
+    color: #fff;
+}
+
+#style-btn {
+    background: linear-gradient(45deg, #1BC9D2, #6772DB, #B142C5);
+    border-radius: 23px;
+    border: 1px solid #ad02cb;
+    width: 122px;
+    height: 40px;
+    color: #fff;
+}
+
+#headset {
+    position: relative;
+    transition: transform .9s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+}
+
+#headset:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.text-style {
+    position: absolute;
+    top: 53px;
+    right: 28px;
+    text-align: right;
+    visibility: visible;
+}
+
+.name {
+    position: relative;
+}
+
+
+.detail {
+    position: absolute;
+    bottom: 45px;
+    left: -125px;
+    font-size: small;
+}
+
+.person>img {
+    width: 130px;
+    height: 159px;
+
+}
+
+.person>img:hover {
+    border: 0.5px #6772DB solid;
+    opacity: 0.5;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#text-headset {
+    position: absolute;
+    top: 160px;
+    left: 77px;
+    font-size: 19px;
+
+}
+
+.link {
+    text-decoration: none;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.person-style {
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+.border-info {
+    border: 1px solid #fff;
+}
+
+.pic {
+    width: 300px;
+    height: 300px;
+}
+
+label {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.style-form {
+    width: 50%;
+    height: 50%;
+    /* box-shadow:  3px -2px 11px 6px rgb(186, 5, 186); */
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+
+
+}
+
+.name,
+.lastname,
+.age,
+.username,
+.password,
+.re-password {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px #fff solid;
+    color: #fff;
+    text-align: center;
+
+}
+
+
+
+
+input {
+    caret-color: crimson;
+    font-weight: bolder;
+    transition: width 2s, height 4s, transform 10s;
+    color: #fff;
+
+}
+
+input:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px aquamarine solid;
+    box-shadow: 3px -2px 11px 6px rgb(254, 0, 0);
+    width: 300px;
+    color: #fff;
+}
+
+
+.btn-style {
+    background: none !important;
+    border: 2px #fff solid;
+    padding: 5px;
+    width: 25%;
+}
+
+.btn-style:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px aquamarine solid;
+    box-shadow: 3px -2px 11px 6px rgb(254, 0, 0);
+
+}
+
+.btnback {
+    color: #fff;
+    border-color: #fff;
+
+}
+
+.product {
+    border: 1px solid blueviolet !important;
+}
+
+.pic-product {
+    padding: 15px;
+}
+
+.description {
+    height: 25px;
+    overflow: auto;
+    text-overflow: ellipsis;
+    border: 1px red solid;
+    transition: transform .2s;
+    text-align: center;
+}
+
+.description:hover {
+    height: 57px;
+    transform: scale(1.1);
+
+
+}
+
+
+.input-style {
+    background-image: linear-gradient(to right, #DC2424 0%, #4A569D 51%, #DC2424 100%);
+    margin: 10px;
+    padding: 9px 17px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #000;
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 10px;
+    display: block;
+}
+
+.input-style:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.Colorize {
+    transition: transform .9s, filter 1.5s ease-in-out;
+    filter: grayscale(85%);
+}
+
+.Colorize:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.margin {
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.piczoom {
+    filter: blur(0);
+    transform: scale(1);
+    transition: transform 1s, filter 2s ease-in-out;
+
+}
+
+.piczoom:hover {
+
+    filter: blur(1px);
+    transform: scale(1.1);
+
+}
+
+.facebook:hover {
+    color: #4867AA;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.youtube:hover {
+    color: #FE0000;
+}
+
+.linkedin:hover {
+    color: #0077B5;
+}

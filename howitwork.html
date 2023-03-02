@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how it work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    
+
+<header>
+    <nav class="navbar navbar-expand-sm  fixed-top" style="background-color: rgba(0,0,0,.4) ;" > 
+      <div class="container " >
+          <a class=" navbar-brand"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAGP0lEQVRoge2Yf4xU1RXHP+e+92ZZhAVEWDbarhhjbBVNLJaSlj+q/EGLrWkspbUKQWGNWsBQZS3g7l0WErWWtZbFKrpJpYk11MZG/2hibJsWMSSlGjQUGkUFicIqu2URZufHO/1jnJ2Zd9/szEv7T9P5JjeZ+b57zznfd8+999wHDTTQQAMNNPA/DEnU+/Yj7Yh/O8Ic0MOI9y7oGwxd9Dd2Sz6xd6stkF+IhO2IBCBHCb09WPngvytg1fsLCdmJcHFppJQ1BkH6mZD5OY/OHq5pb6u2kct3gy4HJkSeKvBnFIsN/vIfClDDymO/A70xdqgZE1AUcxzxVtDf+nJVkz25xaDPAOfXCg7kCdS7Byvp5AKWaIopx94EvaxqH2OiAkBEEfkx22f1Of03ZzpQeRwwtYMfw19R/wasnI4NoeqwqUf3IlxWmSqRFg8BtrHmo40VbE9mFSq/jPF5GtgPHAYyMfYWILkXsJqqX0DH0T7EfKlK4HngbYQB0BeBc7E2VLawZrCjEHz2epB+Kmf8ICrfocufSncwl+7gclL+LIRO4EzE2tch91CcG/c13nbiElLZfwKeG1T4MtmzNzFw+cgYt/JEK0H2YZBlMWKz+LqSSef14TWVcl74A6G/BCvRQAuwo1ci8hJIe7l3hAV0Ba+OL+DOD3aB3OLwufAX7PzcmliHAHcdXw/ykCPCkCOV92meCsYH4Y+0+ou4Q7JVbRVEXIWYvcB5Zew+uvz5iGiRqEyh1SeuRrybEUNFgz3jBg+w48KHgV6HV/HJCqRHgPAYof+DmsED2KYDiK6PsPPozS8tJyoFhNqLEYP5bIsstCO0Dl9f0yHAzDYLvOSK8CGTV7Knl2HlZF22AFqDnSDvVNrSDfEC7hlsw8g33TxmE/aKuN3BhZWQIH0rytvuwxScC0ZcfhwUZqonws7BZq5xBcBSjPEwhrL2D6a3PpfI6aOzh2kK/xSzuoQwHKBDg0T21NsN/CtiannxV5kAuTlmF9mFlTCRw97RL9A8cRlxaS5cxaRTaxPZs5JG9fcRO9+rFLB6ZAZG5kZyXxE/2du3agjN0wQTm2jygbj6Tnq4d3h2IruY5yPELGz60pKAVHYuYiSy+xygb+qRRH4kuxqYjwhMaAE/VArFWVkfJgI7EtlNea+5vvz5JQHifTny9sHIvkROtmg7yJax/14AEyc/DzzldtZF3HvqW3Xb3iCDoO9H2HklAYZrYnaf/YkE5HOPA5PKmDR+cB8mdT/ox05/MduxJyc5fDWIvF5J6CVlAsyFkd0HkAN1G9+cuwX4RqV9tmGb36NvyimUTTGjPs+nqQfq9qFyPMLMKgkQme7MQEoH6zJsdSaq2yLshzT7D479m3bBTsBNSZF1dJ65uk4FJ6oLMDLNWQO+DNVl1+T6gRmRyH5Cp5QOLSshJrwbiG7JPoRPYLX2/UCcFzq9JEDMZLf+aYm9QFSgJ7cU5bsRdh9d3jNO35/N2I/GLWjmkT6zsqavEBDKDpdCSVKcAXFmoNaVb6u2gm6PsIro2vJqsQIZfwPwScyTB1l/9qJx/RlpQSk7xXVymQCTd8vgbPXDRlXI554ELojwu+hKVd9++1s+QbQz5sk0vPBX46ZSSFslUUjx4iIeclIo1JuqGuvNPYDy7Qg7RBDcX3VMEY+cP4AQd+m/jtFP11UdJ3ytktDDJQFwsHAxL2/eD9mmzY6hnswKFOs6kB+xUT6sKQBRQlYBbmUqspVN6YUOb7PXAXMj7N+heCOzo99HzLMx3l5Bw3WQOoQ32k7orwW923XMb+kKltQOvgz3Dd+JyI6YAvIcxqzHa/o1AGFmMUYeQ6RyTSpfxQZ7S0VvT24YdEqiIArRH0G9eVhxT9txoULnyHPAkupfPqj2FeQg6s/BSlhaNHluRcgljP4Uml+cPHgAUZrTt4G+XruvM9YWy/ySgM3+iygbqo5xMYRyI7bpUPIAPoOdeYa8WQS8VfcYlQG6/d3Fv5XbVnfwU0RXUO1bTwlvYvLXYoM9CcKNxyOTTzLh3HzgNzV6KtDHF72OcjL+89pWbSWfW45yA+jFIDNAP0LkEKE8Dd4LWEmabrWx8exXQO9AzAJE2hC8wvdWeQX0MWxT/TPVQAMNNNDA/wX+DZU42wQ5kRAEAAAAAElFTkSuQmCC"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsiblenavbar" onclick="closebutton()">
+              <spna class="navbar-toggler-icon">
+                  <i class="fa fa-align-justify" style="font-size:24px"></i>
+              </spna>
+          </button>
+          <div class="collapse navbar-collapse justify-content-evenly" id="collapsiblenavbar">
+              <ul id = "myLinks"class="navbar-nav ">
+                <li class="products nav-item">
+                  <a class="nav-link"  href="products.html">Products</a>
+                </li>
+                <li class="Companies nav-item">
+                  <a class="nav-link"  href="Companies.html">Companies</a>
+                </li>
+                <li class="howitworks nav-item">
+                  <a class="nav-link"  href="howitwork.html">How it works</a>
+                </li>
+                <div class="login">
+                  <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="join.html">Join</a>
+                </li>
+                </div>
+              </ul >
+          </div>
+      </div>
+    </nav>
+</header>
+        
+
+<section>
+    <div class="container gy-5" style="background-color: rgba(255, 255, 255, 0.1) ;" >
+        <div class="row align-items-center ">
+            <div class="col-12 ">
+                <div class="mt-5 ">
+                    <h3 class="text-center text-danger mt-5 ">
+                        What Is Virtual Reality And How Does It Work
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center ">
+            <div class="col-md-6 col-sm-12 gx-5">
+                <p class=" direction text-center mt-5">
+                    This virtual reality tutorial looks into the introduction of 
+                    virtual reality, including what it is, how it works, and its 
+                    major applications.
+                </p>
+                <p  class=" direction text-center">
+                    We will learn about VR hardware and software that enable
+                    virtual reality as technology then we will delve deeper into
+                    the details of virtual reality headsets and how they
+                    function.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img class="img-fluid piczoom" src="assets/images/Blog-Banner-metaverse.jpeg" alt="Blog-Banner-metaverse" >
+            </div>
+
+            <div class="col-md-6 col-sm-12 d-block mx-auto mt-5" style="background-color: rgba(0,0,0,0.2) ;">
+                <div class="box mt-4">
+                    <p class="text-center text-capitalize">
+                        what you will learn
+                        <input id="btn" class="btn btn-outline-light  " value="click" type="button"  onclick="myFunc()">
+                    </p>
+                    <ul id="text">
+                        <li class="text-danger  direction text-center" >
+                            <a href="#VirtualRealityTutorial" style="text-decoration: none;" class="text-danger">Virtual Reality Tutorial</a>
+                        </li>
+                        <li class="text-danger  direction text-center">
+                             <a href="#IntroductionToComputerGraphicsAndHumanPerception" style="text-decoration: none;" class="text-danger">Introduction To Computer Graphics And Human Perception</a>
+                        </li>
+                        <li class="text-danger  direction text-center" >
+                            <a href="#WhatIsVirtualReality&TheTechnologyBehindIt" style="text-decoration: none;" class="text-danger">What Is Virtual Reality & The Technology Behind It</a>
+                        </li>
+                        <li class="text-danger  direction text-center">
+                            <a href="#TopMetaverseBrandsSellingTheirProductsDigitally" style="text-decoration:none;" class="text-danger">
+                                Top Metaverse Brands Selling Their Products Digitally
+                            </a>
+                        </li>
+                        <li class="text-danger  direction text-center">
+                            <a href="#Nike" style="text-decoration:none;" class="text-danger">
+                                Nick
+                            </a>
+                        </li>
+                        <li class="text-danger  direction text-center">
+                            <a href="#ZARA" style="text-decoration:none;" class="text-danger">
+                                Zara
+                            </a>
+                        </li>
+                        <li class="text-danger  direction text-center">
+                            <a href="#Gucci" style="text-decoration:none;" class="text-danger">
+                                Gucci
+                            </a>
+                        </li>
+                        <li class="text-danger  direction text-center">
+                            <a href="#Adidas" style="text-decoration:none;" class="text-danger">
+                                Adidas
+                            </a>
+                        </li>
+                        <li class="text-danger  direction text-center">
+                            <a href="#Atari" style="text-decoration:none;" class="text-danger">
+                                Atari
+                            </a>
+                        </li>
+                        <li class="text-danger  direction text-center">
+                            <a href="#Burberry" style="text-decoration:none;" class="text-danger">
+                                Burberry
+                            </a>
+                        </li>
+                        <li class="text-danger  direction text-center">
+                            <a href="#RalphLauren" style="text-decoration:none;" class="text-danger">
+                                Ralph Lauren
+                            </a>
+                        </li>
+                        <li class="text-danger  direction text-center">
+                            <a href="#WhoCanUseVR?" style="text-decoration:none;" class="text-danger">
+                                Who Can Use VR?
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="VirtualRealityTutorial">
+    <div class="container"  style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center text-danger mt-5">
+                    Virtual Reality Tutorial
+                </h3>
+            </div>
+            <div class="col-md-6 col-sm-12 ">
+                <p class="text-center mt-5">
+                    Let us take an example to start understanding the basics.
+                </p>
+                <h6 class=" direction text-center">
+                    The image is a demo setup with a virtual reality
+                    head-mounted display steering wheel. The user feels immersed in a car, driving.
+                </h6>
+                <p class=" direction text-center">
+                    Virtual reality is a technology that attempts to regenerate computer images and videos to produce real-
+                    life visual experiences that are beyond those achieved on the ordinary computer monitor and phone. VR
+                    systems do so by using computer vision and advanced graphics to generate 3D images and video by
+                    adding depth, and by reconstructing the scale and distances between static 2D images.
+                </p>
+                <p class=" direction text-center">
+                    The user must be able to explore and control these 3D environments using VR headsets lens and
+                    controllers which might have sensors on them for users to be able to experience the VR content.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 ">
+                <img class="img-fluid piczoom mt-5" src="assets/images/Demo-setup-with-a-virtual-reality-head-mounted-display-steering-wheel.-User-feels-immersed-in-a-car-driving.jpg" alt="virtual" >
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom" src="assets/images/A-user-using-VR-glasses-or-headset...jpg " alt="VR glasses" >
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class=" direction text-center">
+                    The below example is of a user using VR glasses or a headset. What she actually sees is shown on the right-hand side.
+                </p>
+                <p  class=" direction text-center">
+                    In effect, virtual reality is all about using a device like a special 3D video or image camera to create a
+                    three-dimensional world that a user can manipulate and explore later or in real-time using VR headsets
+                    and lenses, while feeling he or she is in that simulated world. The user will see a life-size image and the
+                    resulting perception is that they are part of that simulation.
+                </p>
+                <p class=" direction text-center">
+                    VR hardware and software will help generate or create computer-generated 3D images and video and
+                    this output is cast to a lens mounted on goggles or headset. The headset is strapped onto the user’s head
+                    over the eyes, such that the user is visually immersed in the content they are viewing.
+                </p>          
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class=" direction text-center">
+                    The person viewing the content can use gaze for the gesture to select and browse through the 3D
+                    content or can use hand controllers such as gloves. The controllers and gaze control will help track the
+                    movement of the user’s body and to place the simulated images and videos in the display appropriately
+                    such that there will be a change in perception.
+                  </p>
+                  <p class=" direction text-center">
+                    By moving your head to look left, right, up, and down, you can replicate these motions inside of VR
+                    because the headset has head motion or tracking sensors by either tracking the eye or head. Sensors on
+                    controllers can also be used to collect stimuli response information from the body and send it back to
+                    the VR system to improve the immersion experience.
+                  </p>
+                  <p class=" direction text-center">
+                    <strong>The below image is an example to understand the sense of touch and feel in VR:</strong> A user using VR gloves
+                    and a hand avatar to browse through and interact with VR content. The glove transmits the motion from
+                    the hand to the VR computing or processing unit or system and reflects action on the display. The VR will
+                    also transmit the stimulus back to the user.
+                  </p>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom" src="assets/images/2020-06-09_13-04-23.jpg" alt="hands" >
+            </div>
+
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom" src="assets/images/VR-Training-in-medicine.jpg" alt="VR-Training-in-medicine" >
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class=" direction text-center">
+                  Hence, it has two important things; <strong>computer vision</strong> to help understand objects and <strong>
+                    position tracking</strong>
+                  to help track user movement to place the objects effectively on the display and to change the perception
+                  so that the user can “see the world”.
+                </p>
+                <p class=" direction text-center">
+                  It also comprises other optional devices such as audio headphones, cameras, and sensors to track
+                  user movements and feed it to a computer or phone, and wired or wireless connections. These are used
+                  to improve user experience.
+                </p>
+                <p class=" direction text-center">
+                  Virtual reality has diverse applications. While most of the applications dwell on gaming, it is also finding
+                  its usage in medicine, engineering, manufacturing, design, education and training, and many other fields.
+                </p>
+                <h4 class="text-center text-danger">
+                  VR Training in Medicine
+                </h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="IntroductionToComputerGraphicsAndHumanPerception">
+    <div class="container"  style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-12 gy-5">
+                <h4 class="text-center text-danger">
+                    Introduction To Computer Graphics And Human Perception
+                  </h4>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class=" direction text-center">
+                    It is possible to avoid side effects on human perception while deriving maximum benefits from VR
+                    perception. This is possible with an in-depth and complete understanding of human body physiology and
+                    optical illusions.
+                </p>
+                <p class=" direction text-center">
+                    Our human body perceives the world through body senses that respond differently to different stimuli.
+                    Mimicking human perception in virtual reality requires knowledge of how to fool the senses to know what
+                    are the most important stimuli and what is acceptable quality for subjective viewing.
+                </p>
+                <p class=" direction text-center">
+                    Human vision provides the most information to the brain. It is then followed by hearing, touch, and other
+                    senses. The proper functioning of a VR system requires one to know how to synchronize all stimuli.<br/>
+
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom h-100" src="assets/images/General-organization-of-the-human-perception.png" alt="General-organization-of-the-human-perception">
+            </div>
+            
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom" src="assets/images/LIGHTS1.png" alt="LIGHTS1">
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class="mt-4">
+                    Virtual reality simply tries to simulate human perception (the brain’s interpretation of the senses) in
+                    the real world. The 3D VR environments are not only designed to look like the real-world but also one that
+                    gives the experience of it. In fact, VR is considered immersive when the simulated and the real world are
+                    as much similar as possible.
+                </p>
+                <p class=" direction text-center">
+                    Although to some extent, the simulation may be wrong such that the experiences are enjoyable, the
+                    brain may not be tricked this way. In other cases, it means the simulation is so wrong to the extent that
+                    the user experiences cyber-sickness whereas VR tricks the brain into feelings of motion-sickness.
+                </p>
+                <p class=" direction text-center">
+                    Motion sickness is the queasy feeling that some people get in a car, plane, or boat. It happens when the
+                    simulated and real world are different and the perception is, therefore, confusing to the brain.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="WhatIsVirtualReality&TheTechnologyBehindIt">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-12 gy-5">
+                <h3 class="text-center text-danger">
+                    What Is Virtual Reality & The Technology Behind It
+                </h3>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class=" direction text-center">
+                    Virtual reality is a technology that simulates vision to end up with a 3D environment in which a user
+                    appears to be immersed while browsing through it or experiencing it. The 3D environment is then
+                    controlled in all 3D by the user who is experiencing it. On the one side, the user is creating 3D VR
+                    environments and on the other end, he is experiencing or exploring them with appropriate devices such
+                    as VR headsets.
+                </p>
+                <p class=" direction text-center">
+                    Creating the content starts with an understanding of computer vision, the technology that enables phones
+                    and computers to process images and videos so that they can understand them the way a human visual
+                    system does.
+                </p>
+                <p class=" direction text-center">
+                    An autofocus lens is placed between each eye and the screen. The lenses are adjusted based on the
+                    movement and positioning of the eyes. This allows tracking of the user movement vis-a-vis the display.
+                </p>
+                <p>
+                    On the other end is a device such as a computer or mobile device that
+                    generates and renders the visuals to the eye through the lenses on the headset.
+                </p>
+                <p class=" direction text-center">
+                    The computer is connected to the headset via an HDMI cable to deliver visuals to the eye through the
+                    lenses. When using a dedicated mobile device to deliver the visuals, the phone may be mounted directly
+                    on the headset such that the lenses of the headset simply lie over the mobile device’s display to magnify
+                    the images or sense the movement of the eyes with respect to the mobile device’s image and to finally
+                    create the visuals.
+                </p>
+                <strong class=" direction text-center">
+                    The below image is of a user using a high-end HTC VR headset tethered to the PC via an HDMI cable. We 
+                    have untethered, tethered, and even wireless options.
+                </strong>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom" src="assets/images/head.jpg" alt="head">
+            </div>
+
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom " src="assets/images/Cardboard-VR-devices.-A-user-inserts-their-phone-inside-the-cardboard-device-to-lnt.jpg" alt="Cardboard-VR-devices">
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class=" direction text-center">
+                    High-end VR devices like the one in the image above are expensive. They give high-quality immersive
+                    experiences because they use lenses and computers and advanced visual methodologies.
+                </p>
+                <p class=" direction text-center">
+                    <b><span class="text-danger">Click here</span> for a video for a detailed look into HTC Vive high-end VR headset.</b>
+                </p>
+                <p class=" direction text-center">
+                    For low-end and cheaper Google and other cardboard VR headsets, they use a mobile device. The phone
+                    is usually removable from the headset mount. Low-end VR headsets called cardboards are much cheaper
+                    because they just have a lens and require no advanced material in the making.
+                </p>
+                <p class=" direction text-center">
+                    <b>The below image is of a Cardboard VR headset.</b> A user inserts their phone inside the cardboard headset to
+                    lock out their eye from the rest of the world, clicks on a VR application that hosts virtual reality content,
+                    and they can enjoy VR at a cost of below $20.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class=" direction text-center">
+                    Google Cardboard VR headset with a controller:
+                </p>
+                <p class=" direction text-center">
+                    For the mid-range headsets such as <span class="text-danger">Samsung Gear VR</span>, the headset is designed such that it has a 
+                    computer device size of the phone integrated with a lens and which won’t come out. These are portable 
+                    and mobile and provide the best freedom for using VR content. A user will simply buy the headset, 
+                    connect to the internet, browse through VR content such as games or downloads, and then explore it in 
+                    VR.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom d-block mx-auto" src="assets/images/Google-mobile-VR-headset.-Google-Cardboard.jpg" alt="Google-mobile-VR-headset">
+            </div>
+
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom " src="assets/images/Samsung-Gear-VR-1.jpg" alt="Samsung-Gear-VR-1">
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class="  direction text-center mt-5">
+                    Samsung Gear VR:
+                </p>
+                <p class=" direction text-center">
+                    Each virtual reality headset and visual generation event in each virtual reality system tries to improve
+                    the quality of the visuals by playing around with a number of factors among them.
+                </p>
+                <p class=" direction text-center">
+                    <strong>
+                        These factors are enlisted below:
+                    </strong>
+                </p>
+                <p class=" direction text-center">
+                    <b>#1) Field Of View (FOV)</b>or the viewable area, is the extent to which the display will support the movement
+                    of the eye and head. It is the degree to which the device will contain the virtual world in front of your
+                    eyes. Naturally, a person is able to see about 200°-220° around them without moving the head. It would
+                    result in the feeling of nausea if the FOV results in a misrepresentation of information to the brain.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom d-block mx-auto" src="assets/images/2020.jpg" alt="2020">
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class=" direction text-center">
+                    <b>
+                        Binocular FOV and Monocular FOV:
+                    </b>
+                </p>
+                <p class=" direction text-center">
+                    <b>
+                        #2) The frame rate or the rate at which the GPU can process the visual images per second.
+                    </b>
+                </p>
+                <p class=" direction text-center">
+                    <b>
+                        #3) The screen refresh rate  which is the pace of displaying the visual images.
+                    </b>
+                </p>
+                <p class=" direction text-center">
+                    A FOV of at least 100, a frame rate of at least 60fps, and a competitive refresh rate are required on
+                    the minimum end to give the least of VR experiences.
+                </p>
+                <p class=" direction text-center">
+                    Latency is a very important aspect related to the refreshing rate. For the brain to accept that the
+                    visual image generated on the screen is related to the head movement, the latency must be low to deliver
+                    the visual almost immediately. For Example, a lag of 7- 15 milliseconds is considered to be the ideal.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="TopMetaverseBrandsSellingTheirProductsDigitally">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center text-danger">
+                    Top  Metaverse Brands Selling Their Products Digitally
+                </h3>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom " src="assets/images/metaverse-brands.jpg" alt="">
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <p class=" direction text-center mt-5">
+                    Metaverse brands may well be one of the most critical economic subjects in the modern world. The metaverse is a growing marketplace of the future. And companies already leveraging their brands within the metaverse are poised for an incredible amount of growth. As you look over the following examples, you’ll see how companies leverage new technology to achieve novel innovations. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="Nike">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 gy-5">
+                <h1 class=" direction text-center">
+                    Nike
+                </h1>
+                <p class=" direction text-center">
+                    Nike is a well-known sports and fitness brand that focuses on fun and competition and one of the most wide-reaching metaverse consumer brands. One of Nike’s most significant metaverse projects is located within the Roblox system.
+                </p>
+                <p class=" direction text-center">
+                    Nikeland was created to help integrate sports and play into a lifestyle. It has parks, courts, obstacle courses, and running tracks. All of this has been carefully constructed as a metaverse brand to show people what Nike is all about. On top of this, players can purchase digitalized Nike products, ranging from clothes to shoes, and connect with the brand even more. Nike’s created multiple methods which allow people experience their ethos through the metaverse.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <video width="100%" height="auto" controls>
+                <source src="assets/video/NIKELAND on Roblox - Where Sport Has No Rules ｜ Nike.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="ZARA">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 gy-5">
+                <video  class="mt-5" width="100%" height="auto" controls>
+                    <source src="assets/video/ADERERROR x ZARA 'Be Generation AZ​'.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <h1 class=" direction text-center">
+                    Zara
+                </h1>
+                <p class=" direction text-center">
+                    Zara is a Spanish apparel brand whose entry into the digital fashion market is a collaborative project with South Korean fashion collective Ader Error and South Korean app Zepeto. The project seeks to identify the new generation based on the singularity of individuals by creating virtual clothing and make-up available to the customizable avatars on the app. This essentially means the company takes an innovative and high-tech approach to fashion.
+                </p>
+                <p class=" direction text-center">
+                    Zara’s take on metaverse consumer brands highlights one of the important parts of Web 3.0. Zara ensures that people can transition their shopping experience between the real and digital worlds. For example, their clothing range extends to both physical and digital goods with distinctive black, yellow, bright orange, and navy blue palettes. Even alter egos of renowned models, such as Mica Argañaraz, can be found in the metaverse thanks to Zara.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Gucci">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 gy-5">
+                <h1 class=" direction text-center">
+                    Gucci
+                </h1>
+                <p class=" direction text-center">
+                    Gucci is one of the world’s most famous fashion brands. Meanwhile, Roblox is one of the most popular metaverse games and platforms. It’s no wonder that a collaboration between the two created something unique. That’s exactly what happened when Gucci created a virtual garden exhibition within Roblox. The event was part of Gucci’s 100th birthday celebration.
+                </p>
+                <p class=" direction text-center">
+                    The exhibition highlights how the metaverse can recreate the shopping experience. The fact that Gucci’s digital offerings could only be purchased for a limited time gave users an understanding of scarcity. They were buying something unique which also had equally exceptional value. Some of these items were later resold by users for far more than the real-world version’s value.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="piczoom img-fluid" src="assets/images/metaverse-brands-gucci.jpg" alt="Gucci">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="Adidas">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 gy-5">
+                <h1 class=" direction text-center">
+                    Adidas
+                </h1>
+                <p class=" direction text-center">
+                    Adidas is best known for athletic gear. Their claim to fame as one of the most crucial metaverse brands comes from something known as Non-fungible tokens (NFT). When people think of an NFT, it’s usually related to online images. However, it’s essential to keep in mind that metaverse models also use digital artwork. As such, metaverse items can also be NFTs. Adidas uses that technique to sell wearables in both the physical world and metaverse.
+                </p>
+                <p class=" direction text-center">
+                    Adidas Originals created an NFT campaign, “Into the Metaverse”, in which the famous sports brand partnered with three of the most renowned NFT brands – Bored Ape Yacht Club, PUNKS Comic and gmoney. The collaborative project launched in December 2021, when a limited amount of 30,000 NFTs were sold. The exclusive wearable digital items can be used on various blockchain-based gaming platforms.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="piczoom img-fluid" src="assets/images/metaverse-brands-adidas.jpg" alt="Gucci">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Atari">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 gy-5">
+                <img class="img-fluid piczoom" src="assets/images/metaverse-brands-atari.jpg " alt="Atari" >
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <h1 class=" direction text-center">
+                    Atari
+                </h1>
+                <p class=" direction text-center">
+                    Atari was one of the first companies to bring video games into the home. Thanks to a partnership with The Fabricant and Enjin, Atari is helping to create an entire line of haute couture fashion that sits entirely within the digital realm. Part of their appeal stems from the fact that they’re one-of-a-kind works of digital art that do not have a version in the physical world. These items all highlight a union of high fashion and interactivity.
+                </p>
+                <p class=" direction text-center">
+                    Atari’s work with The Fabricant is powered by Enjin technology. As such, these goods are compatible with all of the Enjin platforms. This means that Atari’s goods can also be stored in Enjin Wallet’s digital backpack.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="Burberry">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 gy-5">
+                <video width="100%" height="auto " controls>
+                    <source src="assets/video/TiMi Studio Group： Honor of Kings co-creation with Burberry by Riccardo Tisci 3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <h1 class=" direction text-center">
+                    Burberry
+                </h1>
+                <p class=" direction text-center">Burberry is a high fashion brand well known for its high-quality collections. But the company recently stepped into a whole new realm of fashion after collaborating with the game designers responsible for Honor of Kings. The collaboration brought some of Burberry’s fashion into the game. The most notable item is an entire outfit consisting of a trench coat, boots, crop top, and shorts.
+
+                </p>
+                <p class=" direction text-center">
+                    The company also offers a vest with crystal embroidery, trousers with a bib-front, a blue trench coat, and wader boots. One of the unique twists is that the complete outfits and individual selections are available both online and offline. This highlights the type of convergence that has made metaverse brands so intriguing.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="RalphLauren">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 gy-5">
+                <h1 class=" direction text-center">
+                    Ralph Lauren
+                </h1>
+                <p class=" direction text-center mt-4">
+                    Ralph Lauren is synonymous with American fashion. As such, 
+                    the news that they were expanding into the digital world was big news among the 
+                    metaverse brands. Ralph Lauren’s metaverse offerings are designed exclusively on the Roblox 
+                    platform and come with themed events. For example, the Ralph Lauren Winter Escape experience lets users 
+                    enjoy winter-themed activities. This included toasting marshmallows, drinking coffee and ice skating in a wintery 
+                    wonderland. Meanwhile, users can browse the Ralph Lauren Digital Collection for a chance to enjoy some vintage fashion based on trends from the 1990s. Avatars can be decked out in various sportswear from the archives of the Ralph Lauren fashion brand.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12 gy-5">
+                <video width="100%" height="auto " controls>
+                    <source src="assets/video/RALPH LAUREN ｜ Introducing Ralph Lauren： The Winter Escape on Roblox.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="WhoCanUseVR?">
+    <div class="container"  style="background-color: rgba(255, 255, 255, 0.1) ;">
+        <div class="row">
+            <div class="col-12 gy-5">
+                <h3 class="text-center text-danger">
+                    Who Can Use VR?
+                </h3>
+            </div>
+            <div class="col-md-6 col-sm-12 d-block mx-auto gy-5">
+                <p class="text-center ">
+                    It depends on the needs. One can use it for entertainment like playing VR games, for training, attending
+                    virtual company or hangout meetings and events, etc. For a consumer of VR content, the first thing that
+                    you should think about is what type of virtual reality headset to buy.
+                </p>
+                <p class="text-center ">
+                    Will it work with a phone, P.C., or what else? Content can be accessed online on media platforms hosting
+                    VR content or should be downloaded for offline usage?
+                </p>
+                <p class="text-center ">
+                    If you are a company, group, or institution intending to take advantage of the immersive benefits of virtual
+                    reality in your advertising campaign, training, or other applications, there may be more factors to consider
+                    including developing your own VR app and content.
+                </p>
+                <p class="text-center ">
+                    In this case, you want to come up with good VR content that influences your viewers and that they can
+                    watch using as many VR headsets as there can possibly be. You might want just a sponsored and branded
+                    immersive VR video and post it online on YouTube and other places.
+                </p>
+                <p class="text-center ">
+                    You may also develop a dedicated VR app for your company – possibly that works on Android and many
+                    other VR mobile and P.C. and non-P.C. platforms – that will host lots of your VR content and ads, which
+                    customers can find out and watch. You may also come up with a branded VR headset alongside your
+                    branded VR content.
+                </p>
+                <p class="text-center ">
+                    If you are a developer willing to develop for VR, you might look into buying headsets that support SDK and
+                    other development tools. Then get a good grasp of the standards and what platforms are used to develop 
+                    for VR.
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+
+
+    <footer>
+        <div class="container-fluid mt-3" style="background-color: #041633 ;">
+          <div class="row align-items-center ">
+            <div class="col-12 columns-style d-flex justify-content-evenly  footer">
+              <div class="col_4">
+                <h6 class="text-center mt-3">
+                  Follow us
+                </h6>
+                <ul class="d-flex p-0">
+                  <i class="p-4 facebook fa fa-facebook-square" style="font-size:36px"></i>
+                  <i class="p-4 fa twitter fa-twitter-square" style="font-size:36px"></i>
+                  <i class="p-4 fa youtube fa-youtube-play" style="font-size:36px"></i>
+                  <i class="p-4 fa linkedin fa-linkedin-square" style="font-size:36px"></i>
+                </ul>
+              </div>
+              <div class="col_4">
+                <h6 class=" text-center mt-4">
+                  Contact us
+                </h6>
+                <form action="#" class="mt-4 d-flex">
+                  <input type="search" placeholder="Enter your email.">
+                  <button type="button" class="btn-search mx-2" id="style-btn">Send</button>
+                </form>
+              </div>
+              <div class="col_4 mt-4">
+                <ul class="d-flex mt-5 ">
+                  <a href="#" class="link">
+                    <span class="m-2">
+                      PrivacyPolicy
+                    </span>
+                  </a>
+                  <a href="#" class="link">
+                    <span class="m-2">
+                      About us
+                    </span>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer>
+            
+        
+<script src="assets/js/index.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+</body>
+</html>

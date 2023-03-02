@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-sm" style="background-color: rgba(0,0,0,.4) ;" > 
+      <div class="container" >
+          <a class=" navbar-brand"><img src="data:image/png;base64,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"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsiblenavbar" onclick="closebutton()">
+              <spna class="navbar-toggler-icon">
+                  <i class="fa fa-align-justify" style="font-size:25px; margin-right: 15px;"></i>
+              </spna>
+          </button>
+          <div class="collapse navbar-collapse justify-content-evenly" id="collapsiblenavbar">
+              <ul id = "myLinks"class="navbar-nav ">
+                <li>
+                  <div id="buy">
+                    <i class="fa fa-shopping-basket " style="font-size:36px; "></i>
+                    <span id="clicks" class="badge rounded-pill bg-danger">
+                      <a>
+                        0
+                      </a>
+                    </span>
+                      <!-- <span id="badgenum" class="badge badge-danger"></span> -->
+                  </div>
+                </li>
+                <li class="home nav-item">
+                  <a class="nav-link"  href="home.html">Home</a>
+                </li>
+                <li class="teams nav-item">
+                  <a class="nav-link"  href="Companies.html">Companies</a>
+                </li>
+                <li class="howitworks nav-item">
+                  <a class="nav-link"  href="howitwork.html">How it works</a>
+                </li>
+                <div class="login">
+                  <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="join.html">Join</a>
+                </li>
+                </div>
+              </ul >
+          </div>
+      </div>
+    </nav>
+</header>
+    
+
+<section class="mt-5">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/product (1).webp" alt="product">
+            </div>
+            <div class="title">
+              Virtual Reality VR Headset
+            </div>
+                <div id="descriptionone" class=" description">
+                  Headset 3D Glasses 
+                  for TV, Movies & Video Games
+                  125GB
+              </div>
+            <div class="price-black-headset mt-4 text-center"></div>
+            <div  class="btn-shop" >
+              <button class="d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus test"  onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/product (2).webp" alt="product">
+            </div>
+            <div  class="title ">
+             Advanced Virtual Reality Headset 
+            </div>
+            <div id="descriptiontwo " class="description">
+              with Carrying Case and Elite Strap for Enhanced Support and Comfort in VR
+            </div>
+            <div class="price-black text-center mt-4"></div>
+            <div class="btn-shop">
+              <button class="d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus test" onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/product (3).webp" alt="product">
+            </div>
+            <div  class="title">
+              VR Glasses,VR Headset 
+            </div>
+            <div class="description">
+              Compatible with iPhone & Android - Virtual Reality Goggles for Kids & Adults 
+            </div>
+            <div class="blueheadset text-center mt-4"></div>
+            <div class="btn-shop" >
+              <button class="d-block mx-auto  input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus test" onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/product (4).webp" alt="product">
+            </div>
+            <div  class="title ">
+              DESTEK V5 VR Headset
+            </div>
+            <div class="description">
+              for Phone with Controller, 110°FOV HD Anti-Blue Virtual Reality Goggles
+            </div>
+            <div class="darkblueheadset text-center mt-4"></div>
+            <div class="btn-shop">
+              <button class=" d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus margin" onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+        
+
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/handcontrol (1).jpg" alt="product">
+            </div>
+            <div class="title">
+              Replacement Touch Handed Controller
+            </div>
+                <div id="descriptionone" class=" description">
+                  Eyglo VR Game Gun Stockfor Whip FPS Gaming Shooting Experience
+              </div>
+            <div class="handone mt-4 text-center"></div>
+            <div  class="btn-shop">
+              <button class="d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus test"  onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/handcontrol (2).jpg" alt="product">
+            </div>
+            <div  class="title ">
+              Replacement Touch Handed Controller
+            </div>
+            <div id="descriptiontwo " class="description">
+              Eyglo VR Game Gun Stockfor Whip FPS Gaming Shooting Experience
+            </div>
+            <div class="handtwo text-center mt-4"></div>
+            <div class="btn-shp">
+              <button class="d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus test" onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/handcontrol (3).jpg" alt="product">
+            </div>
+            <div  class="title">
+              Replacement Touch Handed Controller
+            </div>
+            <div class="description">
+              Eyglo VR Game Gun Stockfor Whip FPS Gaming Shooting Experience
+            </div>
+            <div class="handcontrol text-center mt-4"></div>
+            <div class="btn-shop">
+              <button class="d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus test" onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/handcontrol (4).jpg" alt="product">
+            </div>
+            <div  class="title ">
+              Replacement Touch Handed Controller
+            </div>
+            <div class="description">
+              Eyglo VR Game Gun Stockfor Whip FPS Gaming Shooting Experience
+            </div>
+            <div class="handfour text-center mt-4"></div>
+            <div class="btn-shop" >
+              <button class="d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus margin" onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/full (1).jpg " alt="product">
+            </div>
+            <div  class="title ">
+              Meta Quest 2
+            </div>
+            <div class="description">
+              HTC VIVE Pro Virtual Reality System Gaming Shooting Experience
+            </div>
+            <div class="fullthree text-center mt-4"></div>
+            <div class="btn-shop">
+              <button class= "d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus margin" onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/full (1).webp" alt="product">
+            </div>
+            <div  class="title ">
+              Meta Quest 2
+            </div>
+            <div class="description">
+              HTC VIVE Pro Virtual Reality System Gaming Shooting Experience
+            </div>
+            <div class="fulltwo text-center mt-4"></div>
+            <div class="btn-shop" >
+              <button class="d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus margin" onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/full (2).webp" alt="product">
+            </div>
+            <div  class="title ">
+              Meta Quest 2
+            </div>
+            <div class="description">
+              HTC VIVE Pro Virtual Reality System Gaming Shooting Experience
+            </div>
+            <div class="fullpro text-center mt-4"></div>
+            <div class="btn-shop" >
+              <button class="d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus margin" onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mt-5">
+          <div class="product">
+            <div class="pic-product">
+              <img class="img-fluid pic" src="assets/images/full (3).webp" alt="product">
+            </div>
+            <div  class="title ">
+              Meta Quest 2
+            </div>
+            <div class="description">
+              HTC VIVE Pro Virtual Reality System Gaming Shooting Experience
+            </div>
+            <div class="fullprice text-center mt-4"></div>
+            <div class="btn-shop" >
+              <button class=" d-block mx-auto input-style" type="button" onClick="onClick()">BUY NOW</button>
+            </div>
+            <i class="fa fa-plus margin" onclick="buy()" style="font-size:24px;color: whitesmoke ;"></i>
+          </div>
+        </div>
+
+
+      </div>
+  </div>
+</section>
+        
+
+
+<footer>
+  <div class="container-fluid mt-3" style="background-color: #041633 ;">
+    <div class="row ">
+      <div class="col-12 columns-style d-flex justify-content-evenly  footer">
+        <div class="col_4">
+          <h6 class="text-center mt-3">
+            Follow us
+          </h6>
+          <ul class="d-flex p-0">
+            <i class="p-4 facebook fa fa-facebook-square" style="font-size:36px"></i>
+            <i class="p-4 fa twitter fa-twitter-square" style="font-size:36px"></i>
+            <i class="p-4 fa youtube fa-youtube-play" style="font-size:36px"></i>
+            <i class="p-4 fa linkedin fa-linkedin-square" style="font-size:36px"></i>
+          </ul>
+        </div>
+        <div class="col_4">
+          <h6 class=" text-center mt-4">
+            Contact us
+          </h6>
+          <form action="#" class="mt-4 d-flex">
+            <input type="search" placeholder="Enter your email.">
+            <button type="button" class="btn-search mx-2" id="style-btn">Send</button>
+          </form>
+        </div>
+        <div class="col_4 mt-4">
+          <ul class="d-flex mt-5 ">
+            <a href="#" class="link">
+              <span class="m-2">
+                PrivacyPolicy
+              </span>
+            </a>
+            <a href="#" class="link">
+              <span class="m-2">
+                About us
+              </span>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+      
+
+
+<script src="assets/js/index.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+
+</body>
+</html>

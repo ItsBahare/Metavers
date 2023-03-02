@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+
+<header>
+  <nav class="navbar navbar-expand-sm  fixed-top" style="background-color: rgba(0,0,0,.4) ;" > 
+    <div class="container " >
+        <a class=" navbar-brand"><img src="data:image/png;base64,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"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsiblenavbar" onclick="closebutton()">
+            <spna class="navbar-toggler-icon">
+                <i class="fa fa-align-justify" style="font-size:24px"></i>
+            </spna>
+        </button>
+        <div class="collapse navbar-collapse justify-content-evenly" id="collapsiblenavbar">
+            <ul id = "myLinks"class="navbar-nav ">
+              <li class="products nav-item">
+                <a class="nav-link"  href="products.html">Products</a>
+              </li>
+              <li class="Companies nav-item">
+                <a class="nav-link"  href="Companies.html">Companies</a>
+              </li>
+              <li class="howitworks nav-item">
+                <a class="nav-link"  href="howitwork.html">How it works</a>
+              </li>
+              <div class="login">
+                <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="join.html">Join</a>
+              </li>
+              </div>
+            </ul >
+        </div>
+    </div>
+  </nav>
+</header>
+    
+
+
+
+
+<section>
+  <div class="container gx-5">
+    <div class="row justify-content-center mt-5">
+      <div class="col-12">
+        <h2 class="text-center">
+          Top Companies Building the Metaverse Right Now
+        </h2>
+        
+      </div>
+        
+      <div class="col-md-2 col-sm-12 mt-5">
+        <div class="person-style ">
+          <img class="img-fluid d-block mx-auto" src="assets/images/decentraland-mana-logo.png" alt="decentraland-mana-logo" >  
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12 mt-5">
+          <div class="border-info mt-3">
+            <p>
+              Decentraland was among the early movers who explicitly mentioned the metaverse as their core product.
+              Since its inception in 2017, Decentraland has steadily gained momentum – a piece of real estate inside its VR world recently sold for a record $2.4 million.
+            </p>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-sm-12 mt-5">
+        <div class="person-style ">
+          <img class=" d-block mx-auto img-fluid " src="assets/images/icons8-apple-logo.svg" alt="apple" > 
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12 mt-5">
+        <div class="border-info mt-3">
+          Apple could be a surprising dark horse in the race towards the metaverse. It is currently working on advanced VR gear that could revolutionise the metaverse experience.
+          Morgan Stanley went as far as to say that mass-market adoption of the metaverse hinges on Apple, much like smartphone and tablet markets before it.
+          </div>
+      </div>
+      <div class="col-md-2 col-sm-12 mt-5">
+        <div class="person-style ">
+          <img class="d-block mx-auto img-fluid" src="assets/images/icons8-epic-games.svg" alt="Epic" > 
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12 mt-5">
+        <div class="border-info mt-3">
+          Epic Games, the company behind the popular immersive game Fortnite, was always perfectly poised to build the metaverse.
+          It formalised its intentions this year, announcing a $1 billion funding round to fuel growth opportunities for the metaverse.
+          </div>
+      </div>
+      <div class="col-md-2 col-sm-12 mt-5">
+        <div class="person-style ">
+          <img class="d-block mx-auto img-fluid" src="assets/images/icons8-facebook.svg" alt="Facebook" >  
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12 mt-5">
+        <div class="border-info  mt-3">
+          Facebook has most of the seven infrastructural elements we discussed that go into building the metaverse.
+        Thanks to its Oculus range of headsets, massive social media ad engine, and a thriving creator economy, it could manage to launch a working prototype in 2-5 years.
+        
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-12 mt-5">
+        <div class="person-style ">
+          <img class="d-block mx-auto img-fluid" src="assets/images/icons8-microsoft.svg" alt="Microsoft" > 
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12 mt-5">
+        <div class="border-info mt-3">
+          Microsoft, meanwhile, is looking to build a work-focused metaverse that connects its hugely popular offerings in a digital environment called Mesh.
+          Inside Mesh, you’d be able to use Microsoft Teams, Windows, and other services in VR.
+          </div>
+      </div>
+
+      <div class="col-md-2 col-sm-12 mt-5">
+          <div class="person-style">
+            <img class="d-block mx-auto img-fluid" src="assets/images/icons8-niantic.svg" alt="Niantic’s" > 
+          </div>
+      </div>
+      <div class="col-md-9 col-sm-12 mt-5 ">
+        <div class="border-info mt-3">
+              Niantic’s Pokémon Go was among the first immersive experiences to blur the lines between real and virtual.
+              Now, the company has raised $300 million to build its own metaverse, one that will be an alternative to the original notion of the metaverse as a “dystopian nightmare”.
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container-fluid mt-3" style="background-color: #041633 ;">
+    <div class="row ">
+      <div class="col-12 columns-style d-flex justify-content-evenly  footer">
+        <div class="col_4">
+          <h6 class="text-center mt-3">
+            Follow us
+          </h6>
+          <ul class="d-flex p-0">
+            <i class="p-4 facebook fa fa-facebook-square" style="font-size:36px"></i>
+            <i class="p-4 fa twitter fa-twitter-square" style="font-size:36px"></i>
+            <i class="p-4 fa youtube fa-youtube-play" style="font-size:36px"></i>
+            <i class="p-4 fa linkedin fa-linkedin-square" style="font-size:36px"></i>
+          </ul>
+        </div>
+        <div class="col_4">
+          <h6 class=" text-center mt-4">
+            Contact us
+          </h6>
+          <form action="#" class="mt-4 d-flex">
+            <input type="search" placeholder="Enter your email.">
+            <button type="button" class="btn-search mx-2" id="style-btn">Send</button>
+          </form>
+        </div>
+        <div class="col_4 mt-4">
+          <ul class="d-flex mt-5 ">
+            <a href="#" class="link">
+              <span class="m-2">
+                PrivacyPolicy
+              </span>
+            </a>
+            <a href="#" class="link">
+              <span class="m-2">
+                About us
+              </span>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+      
+
+
+        
+
+<script src="assets/js/index.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+</body>
+</html>
